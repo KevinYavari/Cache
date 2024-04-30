@@ -4,13 +4,17 @@
 Address::Address() : valid(1), tag(""), offset(""), index("") ,missOrHit("") {}
 
 // Constructor con parámetros
-Address::Address(int valid, string tag, string offset,string index, string missOrHit)
-    : valid(valid), tag(tag), offset(offset), index(index) ,missOrHit(missOrHit) {}
+Address::Address(int valid, string tag, string offset,string index, string missOrHit, string dato)
+    : valid(valid), tag(tag), offset(offset), index(index) ,missOrHit(missOrHit), dato(dato) {}
 
 // Métodos set
 
 void Address::setIndex(const string&index) {
     this->index = index;
+}
+
+void Address::setDato(const string &dato) {
+    this->dato = dato;
 }
 
 void Address::setValid(int valid) {
@@ -38,6 +42,17 @@ const string &Address::getTag() const {
     return tag;
 }
 
+<<<<<<< HEAD
+const string &Address::getDato() const {
+    return dato;
+}
+
+const string &Address::getIndex() const {
+    return index;
+}
+
+=======
+>>>>>>> e14f288749b031ff1931e74c7574757d99df2a84
 const string &Address::getOffset() const {
     return offset;
 }

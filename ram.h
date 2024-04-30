@@ -17,4 +17,8 @@ public:
     void mostrarRam();
 };
 
+<<<<<<< HEAD
 #endif 
+=======
+#endif 
+>>>>>>> e14f288749b031ff1931e74c7574757d99df2a84

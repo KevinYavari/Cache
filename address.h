@@ -2,6 +2,7 @@
 #define ADDRESS_H
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -28,9 +29,9 @@ public:
     // Métodos get
     int isValid() const;
     const string &getTag() const;
-    const string &getIndex() const;
     const string &getOffset() const;
     const string &getMissOrHit() const;
+    const string &getIndex() const;
 };
 
 #endif 

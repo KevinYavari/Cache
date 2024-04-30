@@ -4,6 +4,7 @@
 #include <vector>
 #include "address.h"
 
+
 using namespace std;
 
 class Cache {
@@ -14,6 +15,7 @@ public:
     Cache();
     void escribir(int valid, string tag, string offset, string index,string missOrHit); // Método para escribir en la caché
     void escribir(Address adres);
+    void mostrarCache();
 };
 
 #endif // CACHE_H

@@ -1,16 +1,20 @@
-/*#ifndef RAM_H
+#ifndef RAM_H
 #define RAM_H
+
+#include <vector>
+#include "address.h"
+
 
 using namespace std;
 
 
 class Ram {
 private:
-    
-
+    vector<Address> ram;
 public:
     Ram();
-    void rellenar();
+    void escribir2(Address adres);
+    void mostrarRam();
 };
 
-#endif // CACHE_H*/
+#endif 

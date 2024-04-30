@@ -38,14 +38,14 @@ const string &Address::getTag() const {
     return tag;
 }
 
-const string &Address::getIndex() const {
-    return index;
-}
-
 const string &Address::getOffset() const {
     return offset;
 }
 
 const string &Address::getMissOrHit() const {
     return missOrHit;
+}
+
+const string &Address::getIndex() const {
+    return index;
 }

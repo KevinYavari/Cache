@@ -48,11 +48,15 @@
                     break;
                 case 2:
                     cout << "Seleccionaste Escribir" << endl;
-                    cout << "Ingrese un numero";
+                    cout << "Ingrese un numero: ";
                     cin >> num;
+                    cout << endl;
                     resul = bin(num);
                     adres = escribirMemoria(resul);
                     cache.escribir(adres);
+                    cout << "Tag: " + adres.getTag() << endl;
+                    cout << "Index: " + adres.getIndex() << endl;
+                    cout << "Offset: " + adres.getOffset() << endl;
                     break;
                 case 3:
                     cout << "Seleccionaste Salir" << endl;

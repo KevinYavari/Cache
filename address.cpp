@@ -38,6 +38,10 @@ const string &Address::getTag() const {
     return tag;
 }
 
+const string &Address::getIndex() const {
+    return index;
+}
+
 const string &Address::getOffset() const {
     return offset;
 }
